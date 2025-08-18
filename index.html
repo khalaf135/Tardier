@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تقدير – منصة تقدير مدعومة بالذكاء الاصطناعي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <span class="logo" aria-hidden>🧠</span>
+        <span id="brand" data-i18n-key="brand">تقدير</span>
+      </div>
+      <nav class="links" aria-label="Primary">
+        <a href="#home" data-i18n-key="nav.home">الرئيسية</a>
+        <a href="#problem" data-i18n-key="nav.problem">المشكلة</a>
+        <a href="#solution" data-i18n-key="nav.solution">الحل</a>
+        <a href="#impact" data-i18n-key="nav.impact">الأثر</a>
+        <a href="#demo" data-i18n-key="nav.demo">التجربة</a>
+        <a href="#pricing" data-i18n-key="nav.pricing">الأسعار</a>
+        <a href="#about" data-i18n-key="nav.about">من نحن</a>
+        <a href="#contact" data-i18n-key="nav.contact">تواصل معنا</a>
+        <button class="lang-btn" id="langBtn" title="Language">EN</button>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+    </div>
+    <div class="container mobile-menu" id="mobileMenu" aria-label="Mobile menu">
+      <a href="#home" data-i18n-key="nav.home">الرئيسية</a>
+      <a href="#problem" data-i18n-key="nav.problem">المشكلة</a>
+      <a href="#solution" data-i18n-key="nav.solution">الحل</a>
+      <a href="#impact" data-i18n-key="nav.impact">الأثر</a>
+      <a href="#demo" data-i18n-key="nav.demo">التجربة</a>
+      <a href="#pricing" data-i18n-key="nav.pricing">الأسعار</a>
+      <a href="#about" data-i18n-key="nav.about">من نحن</a>
+      <a href="#contact" data-i18n-key="nav.contact">تواصل معنا</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <div class="container grid grid-2">
+        <div>
+          <div class="badge" data-i18n-key="tagline">لكل عمل تقدير!</div>
+          <h1 data-i18n-key="hero.title">تقدير</h1>
+          <p class="lead" data-i18n-key="hero.subtitle">
+            منصة مدعومة بالذكاء الاصطناعي تساعد الجهات على تقدير احتياجهم من المتطوعين والموظفين من حيث العدد والمهارات المطلوبة.
+          </p>
+          <div class="hero-actions">
+            <a href="#demo" class="btn btn-primary" data-i18n-key="hero.try">جرّب الآن →</a>
+            <a href="#contact" class="btn btn-outline" data-i18n-key="hero.demo">اطلب عرض توضيحي</a>
+          </div>
+        </div>
+        <div class="hero-art shadow" aria-label="Dashboard preview">
+          <svg viewBox="0 0 800 480" style="width:100%;height:auto" role="img" aria-label="dashboard illustration">
+            <rect x="10" y="10" width="780" height="460" rx="18" fill="#fff" stroke="#e5e7eb"/>
+            <rect x="30" y="30" width="740" height="120" rx="12" fill="#f0fdfa"/>
+            <rect x="30" y="170" width="360" height="110" rx="12" fill="#f3f4f6"/>
+            <rect x="410" y="170" width="360" height="110" rx="12" fill="#f3f4f6"/>
+            <rect x="30" y="300" width="240" height="120" rx="12" fill="#f8fafc"/>
+            <rect x="290" y="300" width="240" height="120" rx="12" fill="#f8fafc"/>
+            <rect x="550" y="300" width="220" height="120" rx="12" fill="#f8fafc"/>
+            <g fill="#10b981">
+              <rect x="50" y="120" width="20" height="20"/>
+              <rect x="90" y="100" width="20" height="40"/>
+              <rect x="130" y="140" width="20" height="20"/>
+              <rect x="170" y="90" width="20" height="50"/>
+              <rect x="210" y="130" width="20" height="25"/>
+              <rect x="250" y="120" width="20" height="35"/>
+              <rect x="290" y="145" width="20" height="15"/>
+            </g>
+            <path d="M60 230 C200 180 300 260 380 210 S560 250 760 210" fill="none" stroke="#0ea5e9" stroke-width="4"/>
+          </svg>
+          <div class="illus-caption">(نموذج توضيحي)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROBLEM ===== -->
+    <section id="problem" class="section">
+      <div class="container">
+        <h2 data-i18n-key="problem.title">التحدي الذي نواجهه</h2>
+        <p class="lead" data-i18n-key="problem.lead">
+          صعوبة تقدير العدد والمهارات المناسبة للفعاليات. تواجه المؤسسات تحديات كبيرة في تحديد الاحتياجات الدقيقة من الموارد البشرية، مما يؤدي إلى هدر الجهود وضعف الأثر المطلوب.
+        </p>
+        <div class="grid grid-3">
+          <div class="card stat red"><div class="value">40%</div><div class="label" data-i18n-key="problem.s1">عدم تطابق في المهارات</div></div>
+          <div class="card stat"><div class="value" style="color:#dc2626">25%</div><div class="label" data-i18n-key="problem.s2">زيادة في التكاليف</div></div>
+          <div class="card stat red"><div class="value">35%</div><div class="label" data-i18n-key="problem.s3">مبادرات متعثرة</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOLUTION ===== -->
+    <section id="solution" class="section section-soft">
+      <div class="container">
+        <h2 data-i18n-key="solution.title">الحل الذكي</h2>
+        <p class="muted section-kicker" data-i18n-key="solution.lead">منصة تقدير المدعومة بالذكاء الاصطناعي</p>
+        <div class="grid grid-3">
+          <div class="card feature"><div class="icon">🧠</div><h3 data-i18n-key="solution.f1t">تقدير ذكي للعدد والمهارات</h3><p class="muted" data-i18n-key="solution.f1d">خوارزميات متقدمة لتحليل متطلبات المشاريع وتقدير الاحتياجات بدقة عالية.</p></div>
+          <div class="card feature"><div class="icon">🤝</div><h3 data-i18n-key="solution.f2t">مساعد ذكي يقترح بدائل</h3><p class="muted" data-i18n-key="solution.f2d">نظام ذكي يقترح حلول بديلة ومرنة لتحسين كفاءة التخطيط.</p></div>
+          <div class="card feature"><div class="icon">📊</div><h3 data-i18n-key="solution.f3t">لوحة تحكم للتعديل اللحظي</h3><p class="muted" data-i18n-key="solution.f3d">واجهة تفاعلية تتيح التعديل والمتابعة في الوقت الفعلي.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== IMPACT ===== -->
+    <section id="impact" class="section">
+      <div class="container">
+        <h2 data-i18n-key="impact.title">الأثر المحقق</h2>
+        <p class="lead" data-i18n-key="impact.lead">نتائج ملموسة وقابلة للقياس</p>
+        <div class="grid grid-3">
+          <div class="card stat blue"><div class="value">40%</div><div class="label" data-i18n-key="impact.s1">تقليل التكاليف الإدارية</div></div>
+          <div class="card stat blue"><div class="value">60%</div><div class="label" data-i18n-key="impact.s2">رفع كفاءة التخطيط</div></div>
+          <div class="card stat blue"><div class="value">35%</div><div class="label" data-i18n-key="impact.s3">تقليل المبادرات المتعثرة</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEMO ===== -->
+    <section id="demo" class="section section-soft">
+      <div class="container">
+        <h2 data-i18n-key="demo.title">التجربة المباشرة</h2>
+        <p class="lead" data-i18n-key="demo.lead">اختبر المنصة بنفسك</p>
+        <div class="demo card">
+          <div style="text-align:center">
+            <div class="muted" data-i18n-key="demo.note">(منطقة تجربة تفاعلية - Placeholder)</div>
+            <a href="#contact" class="btn btn-primary" style="margin-top:1rem" data-i18n-key="demo.btn">افتح التجربة الكاملة</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2 data-i18n-key="pricing.title">خطط الأسعار</h2>
+        <p class="lead" data-i18n-key="pricing.lead">اختر الخطة المناسبة لمؤسستك</p>
+        <div class="grid grid-3 pricing">
+          <div class="card">
+            <h3 data-i18n-key="pricing.p1">مجاني</h3>
+            <div class="price"><span class="amount">0</span><span class="unit" data-i18n-key="pricing.unit">ريال شهريًا</span></div>
+            <ul class="muted">
+              <li data-i18n-key="pricing.f1_1">حتى 5 تحليلات شهريًا</li>
+              <li data-i18n-key="pricing.f1_2">توصيات ذكية أساسية</li>
+              <li data-i18n-key="pricing.f1_3">دعم عبر البريد الإلكتروني</li>
+              <li data-i18n-key="pricing.f1_4">قوالب معيارية</li>
+            </ul>
+            <a class="btn btn-primary full" href="#contact" data-i18n-key="cta.start">ابدأ الآن</a>
+          </div>
+          <div class="card highlighted">
+            <div class="popular" data-i18n-key="popular">الأكثر شعبية</div>
+            <h3 data-i18n-key="pricing.p2">احترافي</h3>
+            <div class="price"><span class="amount">370</span><span class="unit" data-i18n-key="pricing.unit">ريال شهريًا</span></div>
+            <ul class="muted">
+              <li data-i18n-key="pricing.f2_1">تحليلات غير محدودة</li>
+              <li data-i18n-key="pricing.f2_2">رؤى ذكية متقدمة</li>
+              <li data-i18n-key="pricing.f2_3">دعم أولوية</li>
+              <li data-i18n-key="pricing.f2_4">قوالب مخصصة</li>
+              <li data-i18n-key="pricing.f2_5">وصول للواجهة البرمجية</li>
+              <li data-i18n-key="pricing.f2_6">تعاون الفريق</li>
+            </ul>
+            <a class="btn btn-primary full" href="#contact" data-i18n-key="cta.start">ابدأ الآن</a>
+          </div>
+          <div class="card">
+            <h3 data-i18n-key="pricing.p3">مؤسسي</h3>
+            <div class="price"><span class="amount" data-i18n-key="pricing.custom">مخصص</span></div>
+            <ul class="muted">
+              <li data-i18n-key="pricing.f3_1">كل ما في الاحترافي</li>
+              <li data-i18n-key="pricing.f3_2">مدير حساب مخصص</li>
+              <li data-i18n-key="pricing.f3_3">تكاملات مخصصة</li>
+              <li data-i18n-key="pricing.f3_4">نشر محلي</li>
+              <li data-i18n-key="pricing.f3_5">تدريب وإعداد</li>
+              <li data-i18n-key="pricing.f3_6">ضمان مستوى الخدمة</li>
+            </ul>
+            <a class="btn btn-primary full" href="#contact" data-i18n-key="cta.contact">تواصل معنا</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section section-soft">
+      <div class="container">
+        <h2 data-i18n-key="about.title">من نحن</h2>
+        <p class="lead" data-i18n-key="about.lead">فريق متخصص في الذكاء الاصطناعي والتنمية الاجتماعية</p>
+        <div class="grid grid-2">
+          <div class="card"><h3 class="green" data-i18n-key="about.vision">رؤيتنا</h3><p class="muted" data-i18n-key="about.visionText">أن نكون الرائدين في تطوير حلول الذكاء الاصطناعي للقطاع الاجتماعي في المنطقة.</p></div>
+          <div class="card"><h3 class="green" data-i18n-key="about.mission">رسالتنا</h3><p class="muted" data-i18n-key="about.missionText">دعم المبادرات بالذكاء الاصطناعي لتوزيع الجهود بشكل أكثر كفاءة وتحقيق أثر اجتماعي مستدام.</p></div>
+        </div>
+        <div class="grid grid-4 team">
+          <div class="card"><h3 data-i18n-key="team.t1">استراتيجي الأعمال</h3><p class="muted" data-i18n-key="team.d1">خبراء في تطوير النماذج التجارية</p></div>
+          <div class="card"><h3 data-i18n-key="team.t2">مصممو UX/UI</h3><p class="muted" data-i18n-key="team.d2">مبدعون في تصميم تجارب المستخدم</p></div>
+          <div class="card"><h3 data-i18n-key="team.t3">محللو البيانات</h3><p class="muted" data-i18n-key="team.d3">متخصصون في تحليل البيانات واستخراج الرؤى</p></div>
+          <div class="card"><h3 data-i18n-key="team.t4">مطورو الذكاء الاصطناعي</h3><p class="muted" data-i18n-key="team.d4">خبراء في تطوير خوارزميات التعلم الآلي</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 data-i18n-key="contact.title">تواصل معنا</h2>
+        <p class="lead" data-i18n-key="contact.lead">نحن هنا لمساعدتك في تحقيق أهدافك</p>
+        <div class="grid grid-2">
+          <div class="card">
+            <form onsubmit="event.preventDefault(); alert('تم إرسال النموذج (تجريبي)');" class="form">
+              <input type="text" placeholder="الاسم" data-i18n-placeholder="contact.name" />
+              <input type="email" placeholder="email@example.com" data-i18n-placeholder="contact.email" />
+              <input type="text" placeholder="المؤسسة" data-i18n-placeholder="contact.org" />
+              <textarea rows="5" placeholder="الرسالة" data-i18n-placeholder="contact.msg"></textarea>
+              <button type="submit" class="btn btn-primary" data-i18n-key="contact.send">إرسال</button>
+            </form>
+          </div>
+          <div class="grid contact-cards">
+            <div class="card"><div class="row"><span>✉️</span><span data-i18n-key="contact.mail">info@takdeer.ai</span></div></div>
+            <div class="card"><div class="row"><span>📞</span><span data-i18n-key="contact.phone">+966 11 123 4567</span></div></div>
+            <div class="card"><div class="row"><span>📍</span><span data-i18n-key="contact.addr">الرياض، المملكة العربية السعودية</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container footer-bar">
+      <div class="brand muted"><span class="logo small">🧠</span><span data-i18n-key="footer">© 2025 تقدير. جميع الحقوق محفوظة.</span></div>
+      <button class="to-top" id="toTop" title="إلى الأعلى">↑</button>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
